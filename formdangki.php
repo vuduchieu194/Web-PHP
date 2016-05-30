@@ -58,7 +58,7 @@ if($_POST['register']=="REGISTER"){
 if($_POST['login']=="LOGIN"){
 	$account=$_POST['account'];
 	$pass=md5($_POST['pass']);
-	$sql="select * from khachhang where taikhoan='$account' and matkhau=md5('$pass')";
+	$sql="select * from khachhang where taikhoan='$account' and matkhau='$pass'";
 	$kq=mysql_query($sql);
 	if(mysql_num_rows($kq)==0){
 		echo"<script>alert('Sai tên đăng nhập hoặc mật khẩu!Xin mời nhập lại!');</script>";
