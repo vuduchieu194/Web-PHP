@@ -48,36 +48,36 @@
 
 <form onsubmit="return checkform()" class="form-horizontal" method="post" name="updateMemberInfo">
 
-    <legend>Xin chào <?= $hoten ?>, mời bạn cập nhật thông tin cá nhân</legend>
+    <legend>Hello, <?= $hoten ?></legend>
     <div class="form-group">
-        <label for="inputName" class="col-lg-2 control-label">Tên của bạn</label>
+        <label for="inputName" class="col-lg-2 control-label">Your name </label>
         <div class="col-lg-10">
             <input type="text"  class="form-control" id="inputName" placeholder="<?= $hoten ?>" autocomplete="off" name="fullname">
             <span class="help-block" id="inputNameError"></span>
         </div>
 
-        <label for="inputEmail" class="col-lg-2 control-label">Email của bạn</label>
+        <label for="inputEmail" class="col-lg-2 control-label">Email </label>
         <div class="col-lg-10">
             <input type="email"  class="form-control" id="inputEmail" placeholder="<?= $email ?>" autocomplete="off" name="emailaddress">
         </div>
 
-        <label for="inputCurrentPassword" class="col-lg-2 control-label">Mật khẩu hiện tại</label>
+        <label for="inputCurrentPassword" class="col-lg-2 control-label">Password</label>
         <div class="col-lg-10">
-            <input type="password" required class="form-control" id="inputCurrentPassword" placeholder="Mời bạn nhập mật khẩu hiện tại để cập nhật thông tin" autocomplete="off" name="currentpass">
+            <input type="password" required class="form-control" id="inputCurrentPassword" placeholder="Input your current password to change your personal info!" autocomplete="off" name="currentpass">
         </div>
 
-        <label for="inputPassword" class="col-lg-2 control-label">Mật khẩu mới</label>
+        <label for="inputPassword" class="col-lg-2 control-label">New Password</label>
         <div class="col-lg-10">
-            <input type="password" class="form-control" id="inputPassword" placeholder="Mật khẩu mới" autocomplete="off" name="password">
+            <input type="password" class="form-control" id="inputPassword" placeholder="New Password" autocomplete="off" name="password">
             <span class="help-block" id="inputPasswordError"></span>
         </div>
 
-        <label for="inputpassword_confirm" class="col-lg-2 control-label">Xác nhận mật khẩu mới</label>
+        <label for="inputpassword_confirm" class="col-lg-2 control-label">Confirm New Password</label>
         <div class="col-lg-10">
-            <input type="password" class="form-control" id="inputpassword_confirm" placeholder="Xác nhận mật khẩu mới" autocomplete="off" name="password_confirm">
+            <input type="password" class="form-control" id="inputpassword_confirm" placeholder="Confirm Your New Password" autocomplete="off" name="password_confirm">
         </div>
 
-        <label for="inputPhone" class="col-lg-2 control-label">Số điện thoại</label>
+        <label for="inputPhone" class="col-lg-2 control-label">Phone Number</label>
         <div class="col-lg-10">
             <input type="text"  class="form-control" id="inputPhone" placeholder="<?= $dienthoai ?>" autocomplete="off" name="phonenumber">
         </div>
@@ -85,18 +85,18 @@
     </div>
 
     <div class="form-group">
-      <label for="inputAddress" class="col-lg-2 control-label">Địa chỉ</label>
+      <label for="inputAddress" class="col-lg-2 control-label">Address </label>
       <div class="col-lg-10">
         <textarea class="form-control"  rows="3" id="inputAddress" name="homeaddress" placeholder="<?= $diachi ?>"></textarea>
-        <span class="help-block">Nhập địa chỉ bạn muốn nhận hàng.</span>
+        <span class="help-block">Input your shipping information</span>
       </div>
     </div>
 
     <div class="form-group">
       <div class="col-lg-10 col-lg-offset-2">
         
-        <button type="submit" class="btn btn-primary" name="register" value="REGISTER">Cập nhật thông tin</button>
-        <button type="reset" class="btn btn-default" >Hủy cập nhật</button>
+        <button type="submit" class="btn btn-primary" name="register" value="REGISTER">Update Info</button>
+        <button type="reset" class="btn btn-default" >Clear</button>
       </div>
     </div>
 

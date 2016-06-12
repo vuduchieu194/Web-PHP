@@ -30,24 +30,7 @@
 
 		<span><?=number_format($row['gia'],0,',','.')?> VND</span><br>
 		<!-- wishlist -->
-		<?
-			$sql1 = "select * from wishlist where idkhach = '$idkhach' and idsanpham = '$idsanpham';";
-			$query1 = mysql_query($sql1);
-			$row1 = mysql_fetch_array($query1);
-			$numrow1 = mysql_num_rows($query1);
-
-			// if user added item to wishlist
-			if ($numrow1) {
-				?>
-					<a id="add-to-wishlist" class="btn btn-default">Added to wishlist <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
-				<?
-			// if user haven't added item to wishlist
-			} else {
-		?>
-					<a id="add-to-wishlist" class="btn btn-success" onclick="add_to_wishlist()">Add to wishlist <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
-		<?
-			}
-		?>
+		<? include 'php/like_button.php'; ?>
 		
 		<!-- add to cart -->
 		<a href="?dieuhuong=cart&hanhdong=addtocart&idsanpham=<?=$row['idsanpham']?>" class="btn btn-success" role="button"> Add to Cart </a>

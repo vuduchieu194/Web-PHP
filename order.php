@@ -117,7 +117,6 @@
  <!-- remove item from wishlist -->
  <?
  	foreach(array_keys($_SESSION['CART']) as $key) {
- 		echo $key;
  		$sql = "delete from wishlist where idsanpham = '$key';";
  		$query = mysql_query($sql);
  	}

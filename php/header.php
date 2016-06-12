@@ -31,7 +31,7 @@
           <!-- Tìm sản phẩm theo từ khóa -->
           <div class="nav navbar-center col-md-4">
             <form style="margin-top: 14px;" class="" role="search" action="?dieuhuong=timkiem" method="post">
-                <input type="text" class="form-control" placeholder="  Tìm sản phẩm" name="tukhoa">
+                <input type="text" class="form-control" placeholder="  Search Apple Aces Store" name="tukhoa">
             </form>            
           </div>
 
