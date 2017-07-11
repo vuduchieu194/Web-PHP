@@ -64,7 +64,7 @@ if($_POST['register']=="Hoàn tất đăng ký"){
       <label for="textArea" class="col-lg-2 control-label">Home Address:</label>
       <div class="col-lg-10">
         <textarea class="form-control" required rows="3" id="textArea" name="homeaddress" value="<?=$_REQUEST['homeaddress']?>"></textarea>
-        <span class="help-block" style="color:#930">Note: Please write down please write down the delivery address.</span>
+        <span class="help-block" style="color:#930">Note: Please write down the delivery address.</span>
       </div>
     </div>
 

@@ -6,9 +6,9 @@
 
 <div class="row text-center">
 <div class="col-md-12 well text-right">
-  <h5 class="text-uppercase">sắp xếp sản phẩm theo</h5>
-  <a type="text" class="btn btn-default" class="sort-item" href="?dieuhuong=groupdetail&view=<?= $_GET['view'] ?>&opt=<?= $_GET['opt'] ?>&orderby=desc">Giá Giảm dần</a>
-  <a type="text" class="btn btn-default" class="sort-item" href="?dieuhuong=groupdetail&view=<?= $_GET['view'] ?>&opt=<?= $_GET['opt'] ?>&orderby=asc">Giá Tăng dần</a>
+  <h5 class="text-uppercase">Sort products by</h5>
+  <a type="text" class="btn btn-default" class="sort-item" href="?dieuhuong=groupdetail&view=<?= $_GET['view'] ?>&opt=<?= $_GET['opt'] ?>&orderby=desc">Price decrease <span class="glyphicon glyphicon-chevron-down"></span></a>
+  <a type="text" class="btn btn-default" class="sort-item" href="?dieuhuong=groupdetail&view=<?= $_GET['view'] ?>&opt=<?= $_GET['opt'] ?>&orderby=asc">Price increase <span class="glyphicon glyphicon-chevron-up"></span></a>
 </div>
 </div>
 
